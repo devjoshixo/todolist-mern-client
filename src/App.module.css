@@ -1,10 +1,24 @@
+body{
+  background-image:linear-gradient(to right,rgba(103, 220, 253, 0.349),rgba(120, 223, 252, 0.149),rgb(205, 204, 204));
+}
+
 .App {
   text-align: center;
 }
 
+
 .mainHeading{
-  font-size:5rem;
+  font-family: 'Work Sans', sans-serif;
+  margin:8rem auto 1rem auto;
+  font-size:6.5rem;
   font-weight: 300;
+  letter-spacing: 0.3rem;
   word-spacing:0.2rem;
 }
+.mainHeading123{
+  border-left: 3px solid rgba(131, 131, 131, 0.564);
+  height: 500px;
+}
+
+
 
