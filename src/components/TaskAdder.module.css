@@ -7,19 +7,21 @@
 
 
 .textbox{
-    width:35%;
+    width:30%;
     height: 1.5rem;
     font-size: 1rem;
     padding:10px;
+    padding-left:15px;
     border-radius:20px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border: none;
-    background-color: rgba(194, 194, 194, 0.872);
+    outline:none;
+    background-color: rgba(167, 167, 167, 0.872);
 }
 
 .textbox:hover{
-    background-color: rgba(135, 135, 135, 0.872);
+    background-color: rgba(122, 122, 122, 0.872);
 }
 
 .textbox::placeholder{
@@ -29,6 +31,9 @@
 
 
 .action{
+    border-radius:20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     height: 2.76rem;
     width:7%;
     border:none;
@@ -37,5 +42,5 @@
 }
 
 .action:hover{
-    background-color: rgb(216, 216, 216);
+    background-color: rgba(216, 216, 216, 0.575);
 }

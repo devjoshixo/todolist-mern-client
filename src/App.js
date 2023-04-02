@@ -1,5 +1,6 @@
 import classes from './App.module.css';
 import TaskAdder from './components/TaskAdder';
+import Clock from './components/UI/Clock';
 import GitRef from './components/UI/GitRef';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
       {/* TaskAdding  */}
       <TaskAdder />
+      <Clock />
       {/* Showing current tasks */}
     </div>
   );
