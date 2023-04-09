@@ -13,11 +13,20 @@ const TaskAdder = () => {
 
   const taskAddHandler = () => {
     if (taskInput.trim().length > 0) {
-      taskState.taskAdder(taskInput);
-      console.log(taskState.tasks);
+      const task = {
+        title: taskInput,
+        checked: false,
+      };
+      taskState.taskAdder(task);
       setTaskInput('');
     } else {
       console.log('not good');
+    }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      taskAddHandler();
     }
   };
 
@@ -28,6 +37,7 @@ const TaskAdder = () => {
         placeholder="Add items..."
         value={taskInput}
         onChange={inputChangeHandler}
+        onKeyDown={handleKeyDown}
         className={classes.textbox}
       />
       <button className={classes.action} onClick={taskAddHandler}>

@@ -1,3 +1,26 @@
-.taskItem{
-    
+.taskItem {
+  box-sizing: content-box;
+  max-width: min-content;
+  display: flex;
+  margin-right: 0rem;
+  flex-flow: row nowrap;
+  /* padding-left: 1rem; */
+  gap: 0.7rem;
+  justify-content: flex-start;
+}
+
+.checkmarkbg {
+  margin-top: 0.5rem;
+  width: 2.5em;
+  height: 2.5em;
+  background-image: radial-gradient(black, white);
+  border-radius: 80%;
+}
+
+.deletebg {
+  margin-top: 0.5rem;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: white;
+  border-radius: 80%;
 }

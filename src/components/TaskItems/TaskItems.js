@@ -6,7 +6,13 @@ const TaskItems = () => {
   const taskState = useContext(TaskContext);
 
   return taskState.tasks.map((task) => {
-    return <TaskItem taskValue={task} key={task} />;
+    return (
+      <TaskItem
+        taskTitle={task.title}
+        checked={task.checked}
+        key={task.title}
+      />
+    );
   });
 };
 

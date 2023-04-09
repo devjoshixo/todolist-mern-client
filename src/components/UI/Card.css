@@ -1,0 +1,9 @@
+.Card {
+  padding: 0rem 0.5rem;
+  margin: 2rem auto 1rem auto;
+  width: auto;
+  max-width: 20%;
+  height: 3.5rem;
+  background-color: rgba(167, 167, 167, 0.872);
+  border-radius: 60px;
+}
