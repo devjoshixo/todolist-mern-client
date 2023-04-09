@@ -10,10 +10,11 @@ const TaskState = (props) => {
 
   const taskRemover = (title) => {
     const newTasks = tasks.filter((task) => {
-      if (task.title === title) {
-      } else {
+      if (task.title !== title) {
         return task;
       }
+      // eslint-disable-next-line array-callback-return
+      return;
     });
 
     setTasks(newTasks);
