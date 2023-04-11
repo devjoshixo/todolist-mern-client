@@ -1,6 +1,6 @@
 const taskRemover = async (id) => {
-  //   const url = 'https://todolist-server-db22.onrender.com/tasks';
-  const url = 'http://localhost:5000';
+  const url = 'https://todolist-server-db22.onrender.com/tasks';
+  // const url = 'http://localhost:5000/tasks';
 
   await fetch(url + '/delete', {
     method: 'DELETE',
