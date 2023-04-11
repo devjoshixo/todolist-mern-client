@@ -13,10 +13,11 @@ const TaskState = (props) => {
       if (task.title !== title) {
         return task;
       }
-      // eslint-disable-next-line array-callback-return
-      return;
+      return '';
+      // // eslint-disable-next-line array-callback-return
+      // return;
     });
-
+    console.log(newTasks);
     setTasks(newTasks);
   };
 
