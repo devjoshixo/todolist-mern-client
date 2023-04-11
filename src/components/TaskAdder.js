@@ -1,6 +1,6 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import classes from './TaskAdder.module.css';
-import TaskContext from '../context/tasks/taskContext';
+import AddTask from './API/AddTask';
 
 const TaskAdder = () => {
   const [taskInput, setTaskInput] = useState('');
@@ -9,15 +9,13 @@ const TaskAdder = () => {
     setTaskInput(event.target.value);
   };
 
-  const taskState = useContext(TaskContext);
-
   const taskAddHandler = () => {
     if (taskInput.trim().length > 0) {
       const task = {
         title: taskInput,
         checked: false,
       };
-      taskState.taskAdder(task);
+      AddTask(task);
       setTaskInput('');
     } else {
       console.log('not good');

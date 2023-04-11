@@ -1,17 +1,14 @@
-import { useContext } from 'react';
-import TaskContext from '../../context/tasks/taskContext';
 import Card from '../UI/Card';
+import DeleteTask from '../API/DeleteTask';
 import classes from './TaskItem.module.css';
 
 const TaskItem = (props) => {
-  const taskState = useContext(TaskContext);
-
   const doneHandler = () => {
     console.log('done');
   };
 
   const deleteHandler = () => {
-    taskState.taskRemover(props.id);
+    DeleteTask(props.id);
   };
 
   return (
