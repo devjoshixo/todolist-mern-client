@@ -11,7 +11,7 @@ const TaskItem = (props) => {
   };
 
   const deleteHandler = () => {
-    taskState.taskRemover(props.taskTitle);
+    taskState.taskRemover(props.id);
   };
 
   return (
