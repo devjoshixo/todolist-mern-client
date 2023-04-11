@@ -3,7 +3,7 @@ import TaskContext from './taskContext';
 
 const TaskState = (props) => {
   const [tasks, setTasks] = useState([]);
-  const url = 'http://localhost:5000/tasks';
+  const url = 'https://todolist-server-db22.onrender.com/tasks';
 
   const fetchTasks = async () => {
     const Savedtasks = await fetch(url, {
