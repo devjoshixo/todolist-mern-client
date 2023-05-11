@@ -1,4 +1,6 @@
 .taskItem {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
   box-sizing: content-box;
   display: flex;
   margin-right: 0rem;
@@ -11,6 +13,10 @@
 .taskItem p {
   font-size: 1.1em;
   padding-bottom: 2rem;
+}
+
+.checked {
+  opacity: 30%;
 }
 
 .checkmarkbg {

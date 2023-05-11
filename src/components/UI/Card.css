@@ -8,3 +8,8 @@
   background-color: rgba(167, 167, 167, 0.872);
   border-radius: 60px;
 }
+
+.checked {
+  background-color: black;
+  background-color: rgba(167, 167, 167, 0.4);
+}

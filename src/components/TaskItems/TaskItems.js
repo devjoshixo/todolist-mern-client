@@ -6,21 +6,17 @@ import Spinner from '../UI/Spinner';
 
 const TaskItems = () => {
   const [tasks, setTasks] = useState([]);
-  const [spinner, setSpinner] = useState(false);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    setSpinner(true);
     const text = async () => {
       setTasks(await fetchTasks());
     };
     text();
-    setSpinner(false);
   }, [tasks]);
 
   return (
     <>
-      {spinner ? <Spinner /> : ''}
       <div className={classes.taskItems}>
         {tasks.map((task) => {
           return (
