@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import fetchTasks from '../API/fetchTasks';
 import TaskItem from './TaskItem';
 import classes from './TaskItems.module.css';
-import Spinner from '../UI/Spinner';
+// import Spinner from '../UI/Spinner';
 
 const TaskItems = () => {
   const [tasks, setTasks] = useState([]);
